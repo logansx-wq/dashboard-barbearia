@@ -72,12 +72,12 @@ cd projeto-barbearia-pandas
 Crie e ative um ambiente virtual (recomendado):
 
 
-# Windows (Git Bash)
+## Windows (Git Bash)
 ```Bash
 python -m venv venv
 source venv/Scripts/activate
 ```
-# Linux / macOS
+## Linux / macOS
 ```Bash
 python3 -m venv venv
 source venv/bin/activate
