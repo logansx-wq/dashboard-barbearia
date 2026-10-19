@@ -2,7 +2,7 @@
 
 ## Visao Geral
 
-Este projeto consiste no desenvolvimento de uma pipeline de engenharia e tratamento de dados operacionais de uma barbearia, utilizando a biblioteca Pandas em Python. O objetivo principal e realizar a limpeza, padronizacao estrutural e preparacao analitica dos registros transacionais de atendimentos, permitindo que a base de dados tratada alimente dashboards no Power BI e relatorios executivos com consistencia e confiabilidade.
+Este projeto consiste no desenvolvimento de uma pipeline de engenharia e tratamento de dados operacionais de uma barbearia, utilizando a biblioteca Pandas em Python. O objetivo principal e realizar a limpeza, padronizacao estrutural e preparacao analitica dos registros transacionais de adimentos, permitindo que a base de dados tratada alimente dashboards no Power BI e relatorios executivos com consistencia e contenfiabilidade.
 
 ## Estrutura do Repositorio
 
@@ -23,6 +23,7 @@ barbearia-dados-pandas/
 ├── README.md                        # Documentacao tecnica do projeto
 └── .gitignore                       # Filtro de arquivos transientes e ambientes virtuais
 
+```
 Regras de Negocio e Etapas de Tratamento
 O script analise-e-tratamento.py executa o tratamento dos dados brutos estruturado nas seguintes etapas:
 
