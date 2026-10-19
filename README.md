@@ -62,7 +62,7 @@ Clone o repositório:
 git clone https://github.com/logansx-wq/projeto-barbearia-pandas.git
 cd projeto-barbearia-pandas
 ```
-## Crie e ative um ambiente virtual:
+Crie e ative um ambiente virtual:
 
 ```Bash
 # Windows (Git Bash)
@@ -70,17 +70,17 @@ python -m venv venv
 source venv/Scripts/activate
 ```
 
-## Linux / macOS
+Linux / macOS
 ```Bash
 python3 -m venv venv
 source venv/bin/activate
 ```
-## Instale as dependências necessárias:
+Instale as dependências necessárias:
 
 ```Bash
 pip install pandas openpyxl
 ```
-## Execução do Script
+Execução do Script
 Para processar os dados brutos e gerar a base pronta para análise:
 
 ```Bash
