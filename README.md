@@ -1,96 +1,89 @@
-# Pipeline de Tratamento de Dados Operacionais - Barbearia
-
-## Visao Geral
-
-Este projeto consiste no desenvolvimento de uma pipeline de engenharia e tratamento de dados operacionais de uma barbearia, utilizando a biblioteca Pandas em Python. O objetivo principal e realizar a limpeza, padronizacao estrutural e preparacao analitica dos registros transacionais de adimentos, permitindo que a base de dados tratada alimente dashboards no Power BI e relatorios executivos com consistencia e contenfiabilidade.
-
-## Estrutura do Repositorio
-
-A organizacao do projeto adota a divisao padrão entre dados brutos e dados processados para assegurar a imutabilidade da fonte original:
+# Estrutura do Repositório
+A organização do projeto adota a divisão padrão entre dados brutos e dados processados para assegurar a imutabilidade da fonte original:
 
 ```text
 barbearia-dados-pandas/
-│
-├── data/
-│   ├── raw/
-│   │   └── Cassio.xlsx              # Base de dados operacional bruta
-│   └── processed/
-│       └── Cassio_Tratado.xlsx      # Base final tratada e padronizada
-│
-├── BG Dashboard/                    # Identidade visual e fundos para telas analiticas
-│
-├── analise-e-tratamento.py          # Script principal de ingestao, limpeza e processamento
-├── README.md                        # Documentacao tecnica do projeto
-└── .gitignore                       # Filtro de arquivos transientes e ambientes virtuais
-
+|
++-- data/
+|   +-- raw/
+|   |   \-- Cassio.xlsx              # Base de dados operacional bruta
+|   \-- processed/
+|       \-- Cassio_Tratado.xlsx      # Base final tratada e padronizada
+|
++-- BG Dashboard/                    # Identidade visual e fundos para telas analíticas
+|
++-- analise-e-tratamento.py          # Script principal de ingestão, limpeza e processamento
++-- README.md                        # Documentação técnica do projeto
+\-- .gitignore                       # Filtro de arquivos transientes e ambientes virtuais
 ```
-# Regras de Negocio e Etapas de Tratamento
+# Regras de Negócio e Etapas de Tratamento
 O script analise-e-tratamento.py executa o tratamento dos dados brutos estruturado nas seguintes etapas:
 
-## 1. Ingestão e Filtragem de Consistência
+# 1. Ingestão e Filtragem de Consistência
 Leitura da planilha operacional localizada em data/raw/Cassio.xlsx.
 
-Remocao de registros nulos e linhas vazias na coluna Dia Servico, assegurando que apenas atendimentos efetivamente ocorridos permaneçam na base ativa.
+Remoção de registros nulos e linhas vazias na coluna Dia Serviço, assegurando que apenas atendimentos efetivamente ocorridos permaneçam na base ativa.
 
-## 2. Padronizacao Cronologica
-Dia Servico: Conversao dos carimbos de data para o padrao formal abreviado dd/mes (ex.: 01/set, 15/out), simplificando a categorizacao temporal por dia de atendimento.
+# 2. Padronização Cronológica
+Dia Serviço: Conversão dos carimbos de data para o padrão formal abreviado dd/mês (ex.: 01/set, 15/out), simplificando a categorização temporal por dia de atendimento.
 
-Aniversário: Tratamento com remocao de erros de digitacao e formatacao no padrao padronizado dd/mm/aaaa, facilitando segmentacoes de campanhas de relacionamento com clientes.
+Aniversário: Tratamento com remoção de erros de digitação e formatação no padrão formal dd/mm/aaaa, facilitando segmentações de campanhas de relacionamento com clientes.
 
-## 3. Sanitizacao Textual e Nomes de Campos
-Remocao de espacos em branco nas extremidades de todos os campos textuais (Quem foi ?, Nome do Cliente, Novo Cliente, Lista de Servicos, Lista de Servico Extra, Status do Pagamento e Forma de Pagamento).
+# 3. Sanitização Textual e Nomes de Campos
+Remoção de espaços em branco nas extremidades de todos os campos textuais (Quem foi ?, Nome do Cliente, Novo Cliente, Lista de Serviços, Lista de Serviço Extra, Status do Pagamento e Forma de Pagamento).
 
-Normalizacao de espacamentos e eliminacao de caracteres residuais de preenchimento manual.
+Normalização de espaçamentos e eliminação de caracteres residuais de preenchimento manual.
 
-Padronizacao do nome do campo de  Novo Cliente para Novo Cliente.
+Padronização do nome do campo de  Novo Cliente para Novo Cliente.
 
-## 4. Tratamento Financeiro
-Conversao dos campos financeiros (Valor Avulso, ValorExtra e Valor Servicos) para formato numerico continuo (ponto flutuante).
+# 4. Tratamento Financeiro
+Conversão dos campos financeiros (Valor Avulso, ValorExtra e Valor Serviços) para formato numérico contínuo (ponto flutuante).
 
-Tratamento de valores vazios com preenchimento zerado (0.0), impedindo falhas em calculos agregados.
+Tratamento de valores vazios com preenchimento zerado (0.0), impedindo falhas em cálculos agregados.
 
-Consolidacao da receita individual por comanda somando os servicos principais e extras realizados.
+Consolidação da receita individual por comanda somando os serviços principais e extras realizados.
 
-## 5. Formatacao de Contato Telefonico
-Conversao das entradas numericas e notacoes decimais para strings alfanumericas consistentes de identificador de chamada.
+# 5. Formatação de Contato Telefônico
+Conversão das entradas numéricas e notações decimais para strings alfanuméricas consistentes de identificador de chamada.
 
-## 6. Preservacao Estrutural
-Manutencao rigorosa das colunas originais da base de dados, garantindo compatibilidade reversa com ferramentas de relatorio e preservando a integridade estrutural das metricas de negocio.
+# 6. Preservação Estrutural
+Manutenção rigorosa das colunas originais da base de dados, garantindo compatibilidade reversa com ferramentas de relatório e preservando a integridade estrutural das métricas de negócio.
 
-## Como Executar o Projeto
-Pre-requisitos
+# Como Executar o Projeto
+Pré-requisitos
 Python 3.10 ou superior instalado.
+
 Git configurado.
 
-## Instalação
-Clone o repositorio:
+# Instalação
+Clone o repositório:
 
 ```Bash
-git clone [https://github.com/logansx-wq/projeto-barbearia-pandas.git](https://github.com/logansx-wq/projeto-barbearia-pandas.git)
+git clone https://github.com/logansx-wq/projeto-barbearia-pandas.git
 cd projeto-barbearia-pandas
 ```
-Crie e ative um ambiente virtual (recomendado):
+# Crie e ative um ambiente virtual (recomendado):
 
-
-## Windows (Git Bash)
 ```Bash
+# Windows (Git Bash)
 python -m venv venv
 source venv/Scripts/activate
 ```
-## Linux / macOS
+
+# Linux / macOS
 ```Bash
 python3 -m venv venv
 source venv/bin/activate
 ```
-## Instale as dependências necessárias:
+# Instale as dependências necessárias:
 
 ```Bash
 pip install pandas openpyxl
 ```
 # Execução do Script
-Para processar os dados brutos e gerar a base pronta para analise:
+Para processar os dados brutos e gerar a base pronta para análise:
 
 ```Bash
 python analise-e-tratamento.py
 ```
-O arquivo final estara disponivel em data/processed/Cassio_Tratado.xlsx, pronto para importacao e modelagem dimensional em ferramentas de BI.
+O arquivo final estará disponível em data/processed/Cassio_Tratado.xlsx, pronto para importação e modelagem dimensional em ferramentas de BI.
