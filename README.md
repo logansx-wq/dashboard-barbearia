@@ -37,7 +37,7 @@ Aniversário: Tratamento com remoção de erros de digitação e formatação no
 
 <img width="135" height="474" alt="image" src="https://github.com/user-attachments/assets/f88a02fb-bdba-4db0-8051-c7d41ae16b56" />
 -
-<img width="176" height="473" alt="image" src="https://github.com/user-attachments/assets/0b93b76d-b7d2-4e6b-976b-a2b16cfc55e9" />
+<img width="176" height="401" alt="image" src="https://github.com/user-attachments/assets/0b93b76d-b7d2-4e6b-976b-a2b16cfc55e9" />
 
 
 ## 3. Sanitização Textual e Nomes de Campos
