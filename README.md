@@ -33,8 +33,12 @@ Dia Serviço: Conversão dos carimbos de data para o padrão formal abreviado dd
 <img width="176" height="473" alt="image" src="https://github.com/user-attachments/assets/042ca2f3-9141-41ec-be12-cd6008380ed3" />
 
 
-
 Aniversário: Tratamento com remoção de erros de digitação e formatação no padrão formal dd/mm/aaaa, facilitando segmentações de campanhas de relacionamento com clientes.
+
+<img width="135" height="474" alt="image" src="https://github.com/user-attachments/assets/f88a02fb-bdba-4db0-8051-c7d41ae16b56" />
+-
+<img width="104" height="502" alt="image" src="https://github.com/user-attachments/assets/0b93b76d-b7d2-4e6b-976b-a2b16cfc55e9" />
+
 
 ## 3. Sanitização Textual e Nomes de Campos
 Remoção de espaços em branco nas extremidades de todos os campos textuais (Quem foi ?, Nome do Cliente, Novo Cliente, Lista de Serviços, Lista de Serviço Extra, Status do Pagamento e Forma de Pagamento).
