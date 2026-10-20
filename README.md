@@ -30,7 +30,8 @@ Dia Serviço: Conversão dos carimbos de data para o padrão formal abreviado dd
 <img width="208" height="480" alt="image" src="https://github.com/user-attachments/assets/36d894d1-c940-444c-a815-ec692a8769c4" />
 -
 
-<img width="177" height="540" alt="image" src="https://github.com/user-attachments/assets/88c2c280-e651-4688-93a4-82596e7a8423" />
+<img width="160" height="476" alt="image" src="https://github.com/user-attachments/assets/23a505e3-aa36-4525-8c32-87cdd52b84a6" />
+
 
 Aniversário: Tratamento com remoção de erros de digitação e formatação no padrão formal dd/mm/aaaa, facilitando segmentações de campanhas de relacionamento com clientes.
 
