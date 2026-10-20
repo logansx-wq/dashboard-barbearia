@@ -45,17 +45,22 @@ Remoção de espaços em branco nas extremidades de todos os campos textuais (Qu
 
 Normalização de espaçamentos e eliminação de caracteres residuais de preenchimento manual.
 
-Padronização do nome do campo de  Novo Cliente para Novo Cliente.
+Padronização do nome do campo de  "Novo  Cliente" para "Novo Cliente" (sem um espaço a mais).
 
 ## 4. Tratamento Financeiro
-Conversão dos campos financeiros (Valor Avulso, ValorExtra e Valor Serviços) para formato numérico contínuo (ponto flutuante).
+Conversão dos campos financeiros (Valor Avulso, ValorExtra e Valor Serviços) para formato numérico contínuo (float).
 
 Tratamento de valores vazios com preenchimento zerado (0.0), impedindo falhas em cálculos agregados.
 
 Consolidação da receita individual por comanda somando os serviços principais e extras realizados.
 
-## 5. Formatação de Contato Telefônico
+## 5. Formatação de Contato Telefônico*
 Conversão das entradas numéricas e notações decimais para strings alfanuméricas consistentes de identificador de chamada.
+
+<img width="74" height="489" alt="image" src="https://github.com/user-attachments/assets/ac84fb8a-cc7b-47ff-a9b9-05d79ca9c756" />
+<img width="93" height="401" alt="image" src="https://github.com/user-attachments/assets/135a7434-9fca-4a33-9b41-b070c18bda40" />
+
+*(Os dados contidos nesse repositório, não contém os números de telefone por razões de privacidade)
 
 ## 6. Preservação Estrutural
 Manutenção rigorosa das colunas originais da base de dados, garantindo compatibilidade reversa com ferramentas de relatório e preservando a integridade estrutural das métricas de negócio.
