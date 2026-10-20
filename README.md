@@ -28,6 +28,7 @@ Remoção de registros nulos e linhas vazias na coluna Dia Serviço, assegurando
 Dia Serviço: Conversão dos carimbos de data para o padrão formal abreviado dd/mês (ex.: 01/set, 15/out), simplificando a categorização temporal por dia de atendimento.
 
 <img width="208" height="480" alt="image" src="https://github.com/user-attachments/assets/36d894d1-c940-444c-a815-ec692a8769c4" />
+-
 
 <img width="177" height="540" alt="image" src="https://github.com/user-attachments/assets/88c2c280-e651-4688-93a4-82596e7a8423" />
 
