@@ -1,4 +1,4 @@
-# Sistema de Inteligência Operacional e Gerencial para Barbearia
+# Dashboard de Inteligência Operacional e Gerencial para Barbearia
 
 ## Objetivo
 
